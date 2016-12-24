@@ -60,7 +60,7 @@ func outletHandler(w http.ResponseWriter, r *http.Request) {
 			o = "on"
 		}
 	*/
-	s := fmt.Sprint("wake")
+	s := fmt.Sprint("sudo pm-hibernate")
 	cmd := exec.Command(s)
 	err := cmd.Start()
 	if err != nil {
