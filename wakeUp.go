@@ -76,7 +76,7 @@ func Serve() {
 	http.HandleFunc("/outlet", makeHandler(outletHandler))
 
 	s := &http.Server{
-		Addr:           ":8181",
+		Addr:           ":8888",
 		Handler:        nil,
 		ReadTimeout:    10 * time.Second,
 		WriteTimeout:   10 * time.Second,
